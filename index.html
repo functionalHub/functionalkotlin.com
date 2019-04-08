@@ -1,271 +1,303 @@
-            <!DOCTYPE html>
-            <html lang="es-ES">
-            <head>
-                <meta charset="utf-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="description" content="Learn the main concepts of functional programming in Kotlin in a simple and practical way with this online course">
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Learn the main concepts of functional programming in Kotlin in a simple and practical way with this online course"
+    name="description">
 
-                <title>Functional Programming in Kotlin Free Course</title>
+  <title>Functional Programming in Kotlin Free Course</title>
 
-                <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-                <link href="css/main.min.css" rel="stylesheet">
-                <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-                <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-                <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-                <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
+  <link href="img/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
 
-                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-                <!--[if lt IE 9]>
-                    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-                <![endif]-->
-            </head>
-            <body id="page-top" class="index">
-                <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-                    <div class="container">
-                        <div class="navbar-header page-scroll">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand" href="#page-top">
-                                <img class="img-responsive" src="img/logo.png" alt="Functional Swift">
-                            </a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="hidden">
-                                    <a href="#page-top"></a>
-                                </li>
-                                <li class="page-scroll">
-                                    <a href="/course">The course</a>
-                                </li>
-                                <li class="page-scroll">
-                                    <a href="#whykotlin">Why Kotlin?</a>
-                                </li>
-                                <li class="page-scroll">
-                                    <a href="#team">Team</a>
-                                </li>
-                                <li class="page-scroll">
-                                    <a href="#apple">Apple Fan?</a>
-                                </li>
-                                <li class="page-scroll">
-                                    <a href="#contact">Follow us!</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="index" id="page-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="mainNav">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse"
+        type="button">
+        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="#page-top">
+        <img alt="Functional Swift" class="img-responsive" src="img/logo.png">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="course.html">The course</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#whykotlin">Why Kotlin?</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#team">Team</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#apple">Apple Fan?</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#contact">Follow us!</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                <!-- Header -->
-                <header>
-                    <div class="container" id="maincontent" tabindex="-1">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <img class="img-responsive" src="img/logo-h.png" alt="Functional Kotlin" style="max-width:250px;">
-                                <div class="intro-text">
-                                    <hr class="code">
-                                    <span class="skills">Learn the main concepts of functional programming in Kotlin <br/> in a simple and practical way</span>
+<!-- Header -->
+<header>
+  <div class="container" id="maincontent" tabindex="-1">
+    <div class="row">
+      <div class="col-lg-12">
+        <img alt="Functional Kotlin" class="img-responsive" src="img/logo-h.png" style="max-width:250px;">
+        <div class="intro-text">
+          <hr class="code">
+          <span class="skills">Learn the main concepts of functional programming in Kotlin <br/> in a simple and practical way</span>
 
-                                    <div class="col-lg-12">
-                                        <a href="https://functionalhub.thinkific.com/bundles/functional-programming-in-kotlin-course" class="btn btn-lg btn-curso">I want to LEARN!</a>
-                                    </div>
+          <div class="col-lg-12">
+            <a class="btn btn-lg btn-curso"
+              href="https://functionalhub.thinkific.com/bundles/functional-programming-in-kotlin-course">I want to
+              LEARN!</a>
+          </div>
 
-                                    <div class="col-sm-12 text-center">
-                                        <div id="mc_embed_signup">
-                                        <form action="//functionalkotlin.us14.list-manage.com/subscribe/post?u=8f33dd73453553d27fb4d0fe8&amp;id=f6b002ad10" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                            <div id="mc_embed_signup_scroll">
-                                            
-                                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
-                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8f33dd73453553d27fb4d0fe8_a9f1bbb96a" tabindex="-1" value=""></div>
-                                            <div class="clear"><input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary btn-subscribe"></div>
-                                            </div>
-                                        </form>
-                                        </div>
-                                    </div>
+          <div class="col-sm-12 text-center">
+            <div id="mc_embed_signup">
+              <form action="//functionalkotlin.us14.list-manage.com/subscribe/post?u=8f33dd73453553d27fb4d0fe8&amp;id=f6b002ad10"
+                class="validate" id="mc-embedded-subscribe-form" method="post"
+                name="mc-embedded-subscribe-form" novalidate target="_blank">
+                <div id="mc_embed_signup_scroll">
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-                <!-- Video intro -->
-                <section id="video-intro">
-                    <div class="container">
-                        <div class="col-lg-12 text-center">
-                            <a href="https://functionalhub.thinkific.com/courses/introduction-functional-programming-kotlin" class="btn btn-lg btn-curso">Try for FREE Now</a>
-                        </div>
-                        <div class="col-sm-12 hidden-xs text-center">
-                            <iframe src="https://player.vimeo.com/video/236132029" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl text-center">
-                            <iframe src="https://player.vimeo.com/video/236132029" width="350" height="197" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <a href="https://functionalhub.thinkific.com/courses/introduction-functional-programming-kotlin" class="btn btn-lg btn-curso">Try for FREE Now</a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Why Kotlin -->
-                <section class="success" id="whykotlin">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center" style="margin-bottom: 20px;">
-                                <h2>Why Kotlin?</h2>
-                                <hr class="code">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-2">
-                                <p>Kotlin is the future of multi-platform languages. It is officially supported by Google for Android App development and it is also an alternative for backend development as it runs on the JVM.</p>
-                                <p>Beyond backend development, frontend development can be done with Kotlin JS and, thanks to the Kotlin Native project, Kotlin could be seen in a short term running in any device; from Raspberri Pi to iPhone.</p>
-                            </div>
-                            <div class="col-lg-4">
-                                <p>What does this mean? With the skills you will learn in this course you could develop functional software in any platform and even be able to share code between them.</p>
-                                <p>Kotlin is here to stay and its easiness and functional capabilities make it the perfect language to begin with functional programming.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Team -->
-                <section id="team">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 text-center">
-                                <h2>Team</h2>
-                                <hr class="team">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="team-members-above">
-                                <div class="col-sm-4 team-item">
-                                    <img src="img/team/jmnavarro.png" class="img-responsive img-centered" alt="Jose Manuel Navarro">
-                                    <h3 class="text-center">
-                                        <span class="title-sansbold">Jose Manuel</span>
-                                        <span class="title-sanslight">Navarro</span>
-                                    </h3>
-                                    <h3 class="text-center">
-                                        <a href="https://github.com/jmnavarro" target="_blank"><i class="fa fa-fw fa-github"></i></a>
-                                        <a href="https://twitter.com/jmnavarro" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                                    </h3>
-                                </div>
-                                <div class="col-sm-4 team-item">
-                                    <img src="img/team/victorgalan.jpg" class="img-responsive img-centered" alt="Victor Galán">
-                                    <h3 class="text-center">
-                                        <span class="title-sansbold">Victor</span>
-                                        <span class="title-sanslight">Galán</span>
-                                    </h3>
-                                    <h3 class="text-center">
-                                        <a href="https://github.com/victorg1991" target="_blank"><i class="fa fa-fw fa-github"></i></a>
-                                        <a href="https://twitter.com/votilde" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                                    </h3>
-                                </div>
-                                <div class="col-sm-4 team-item">
-                                    <img src="img/team/pablisco.png" class="img-responsive img-centered" alt="pablisco">
-                                    <h3 class="text-center">
-                                        <span class="title-sansbold">Pablo (pablisco)</span>
-                                        <span class="title-sanslight">Alonso</span>
-                                    </h3>
-                                    <h3 class="text-center">
-                                        <a href="https://github.com/pablisco" target="_blank"><i class="fa fa-fw fa-github"></i></a>
-                                        <a href="https://twitter.com/pablisc0" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Apple Fan -->
-                <section class="success" id="apple">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <h2>Apple Fan?</h2>
-                                <hr class="star-light star-light-about">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-11 col-lg-offset-1">
-                                <div class="cross">
-                                    <h1 class="col-xs-12 col-lg-2 title-sanslight text-center name">Free</h1>
-                                    <h1 class="col-xs-12 col-lg-7 title-sansbold name" style="font-size:17pt;text-align: center;">
-                                        Introduction to Functional Programming in Swift
-                                    </h1>
-                                    <a href="http://functionalhub.thinkific.com/courses/introduction-functional-programming-swift" target="_blank" alt="Get course!">
-                                        <h1 class="col-xs-12 col-lg-2 col-lg-offset-1 title-sanslight btn btn-lg btn-primary name" style="border-radius: 0;">Go!</h1>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Footer -->
-                <footer class="text-center" id="contact">
-                    <div class="footer-above">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <h2>Follow us!</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="footer col-xs-12">
-                                    <ul class="list-inline">
-                                        <li>
-                                            <a href="http://github.com/functionalkotlin" target="_blank" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="http://twitter.com/kotlinfp" target="_blank" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="http://vimeo.com/functionalhub" target="_blank" class="btn-social btn-outline"><span class="sr-only">Vimeo</span><i class="fa fa-fw fa-vimeo"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:info@functionalhub.es" target="_blank" class="btn-social btn-outline"><span class="sr-only">Email</span><i class="fa fa-fw fa-envelope"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-below">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    Copyright Functional Kotlin 2018 &copy; All rights reserved
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-                    <a class="btn btn-primary" href="#page-top">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
+                  <input class="email" id="mce-EMAIL" name="EMAIL" placeholder="Email" required
+                    type="email" value="">
+                  <div aria-hidden="true" style="position: absolute; left: -5000px;"><input
+                    name="b_8f33dd73453553d27fb4d0fe8_a9f1bbb96a" tabindex="-1" type="text"
+                    value=""></div>
+                  <div class="clear">
+                    <input class="btn btn-lg btn-primary btn-subscribe" id="mc-embedded-subscribe" name="subscribe"
+                      type="submit"
+                      value="Subscribe!"></div>
                 </div>
+              </form>
+            </div>
+          </div>
 
-                <script src="vendor/jquery/jquery.min.js"></script>
-                <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-                <script src="js/main.min.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-                <script>
-                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- Video intro -->
+<section id="video-intro">
+  <div class="container">
+    <div class="col-lg-12 text-center">
+      <a class="btn btn-lg btn-curso"
+        href="https://functionalhub.thinkific.com/courses/introduction-functional-programming-kotlin">Try for FREE
+        Now</a>
+    </div>
+    <div class="col-sm-12 hidden-xs text-center">
+      <iframe allowfullscreen frameborder="0" height="360" mozallowfullscreen
+        src="https://player.vimeo.com/video/236132029" webkitallowfullscreen width="640"></iframe>
+    </div>
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl text-center">
+      <iframe allowfullscreen frameborder="0" height="197" mozallowfullscreen
+        src="https://player.vimeo.com/video/236132029" webkitallowfullscreen width="350"></iframe>
+    </div>
+    <div class="col-lg-12 text-center">
+      <a class="btn btn-lg btn-curso"
+        href="https://functionalhub.thinkific.com/courses/introduction-functional-programming-kotlin">Try for FREE
+        Now</a>
+    </div>
+  </div>
+</section>
 
-                  ga('create', 'UA-48436705-10', 'auto');
-                  ga('send', 'pageview');
+<!-- Why Kotlin -->
+<section class="success" id="whykotlin">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center" style="margin-bottom: 20px;">
+        <h2>Why Kotlin?</h2>
+        <hr class="code">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <p>Kotlin is the future of multi-platform languages. It is officially supported by Google for Android
+          App development and it is also an alternative for backend development as it runs on the JVM.</p>
+        <p>Beyond backend development, frontend development can be done with Kotlin JS and, thanks to the Kotlin
+          Native project, Kotlin could be seen in a short term running in any device; from Raspberri Pi to
+          iPhone.</p>
+      </div>
+      <div class="col-lg-4">
+        <p>What does this mean? With the skills you will learn in this course you could develop functional
+          software in any platform and even be able to share code between them.</p>
+        <p>Kotlin is here to stay and its easiness and functional capabilities make it the perfect language to
+          begin with functional programming.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                </script>
-            </body>
+<!-- Team -->
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>Team</h2>
+        <hr class="team">
+      </div>
+    </div>
+    <div class="row">
+      <div class="team-members-above">
+        <div class="col-sm-4 team-item">
+          <img alt="Jose Manuel Navarro" class="img-responsive img-centered" src="img/team/jmnavarro.png">
+          <h3 class="text-center">
+            <span class="title-sansbold">Jose Manuel</span>
+            <span class="title-sanslight">Navarro</span>
+          </h3>
+          <h3 class="text-center">
+            <a href="https://github.com/jmnavarro" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+            <a href="https://twitter.com/jmnavarro" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+          </h3>
+        </div>
+        <div class="col-sm-4 team-item">
+          <img alt="Victor Galán" class="img-responsive img-centered" src="img/team/victorgalan.jpg">
+          <h3 class="text-center">
+            <span class="title-sansbold">Victor</span>
+            <span class="title-sanslight">Galán</span>
+          </h3>
+          <h3 class="text-center">
+            <a href="https://github.com/victorg1991" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+            <a href="https://twitter.com/votilde" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+          </h3>
+        </div>
+        <div class="col-sm-4 team-item">
+          <img alt="pablisco" class="img-responsive img-centered" src="img/team/pablisco.png">
+          <h3 class="text-center">
+            <span class="title-sansbold">Pablo (pablisco)</span>
+            <span class="title-sanslight">Alonso</span>
+          </h3>
+          <h3 class="text-center">
+            <a href="https://github.com/pablisco" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+            <a href="https://twitter.com/pablisc0" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            </html>
+<!-- Apple Fan -->
+<section class="success" id="apple">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>Apple Fan?</h2>
+        <hr class="star-light star-light-about">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-lg-11 col-lg-offset-1">
+        <div class="cross">
+          <h1 class="col-xs-12 col-lg-2 title-sanslight text-center name">Free</h1>
+          <h1 class="col-xs-12 col-lg-7 title-sansbold name" style="font-size:17pt;text-align: center;">
+            Introduction to Functional Programming in Swift
+          </h1>
+          <a alt="Get course!" href="http://functionalhub.thinkific.com/courses/introduction-functional-programming-swift" target="_blank">
+            <h1 class="col-xs-12 col-lg-2 col-lg-offset-1 title-sanslight btn btn-lg btn-primary name" style="border-radius: 0;">Go!</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center" id="contact">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>Follow us!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer col-xs-12">
+          <ul class="list-inline">
+            <li>
+              <a class="btn-social btn-outline" href="http://github.com/functionalkotlin" target="_blank">
+                <span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-social btn-outline" href="http://twitter.com/kotlinfp" target="_blank">
+                <span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-social btn-outline" href="http://vimeo.com/functionalhub" target="_blank">
+                <span class="sr-only">Vimeo</span><i class="fa fa-fw fa-vimeo"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-social btn-outline" href="mailto:info@functionalkotlin.com" target="_blank">
+                <span class="sr-only">Email</span><i class="fa fa-fw fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Copyright Functional Kotlin 2019 &copy; All rights reserved
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/main.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48436705-10', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>

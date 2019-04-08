@@ -1,302 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Learn the main concepts of functional programming in Kotlin in a simple and practical way with this online course">
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Learn the main concepts of functional programming in Kotlin in a simple and practical way with this online course" name="description">
 
-    <title>The Course - Functional Kotlin</title>
+  <title>The Course - Functional Kotlin</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
+  <link href="./img/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-<body id="page-top" class="index">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="./">
-                    <img class="img-responsive" src="img/logo.png" alt="Functional Kotlin">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="">The course</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="./#whykotlin">Why Kotlin?</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="./#team">Team</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="./#apple">Apple fan?</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="./#contact">Follow us!</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- The course -->
-    <section class="secondary" id="course">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2>The Course</h2>
-                    <hr class="chapters">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-10 col-lg-offset-1">
-                    <!-- Panel 1 -->
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                              <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Week 1: Introduction ✌🏻</a>
-                                <span class="onair">1.5h</span>
-                              </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                              <div class="panel-body">
-                                As any great story, we need to start from the very begining. In order to warm engines, we'll see what functional programming is and what their basic principles are. And it's free... What are you waiting for?<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222826-what-is-functional-programming" target="_blank">What is Functional Programming? <em>(7:08)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222827-mutable-state-sucks" target="_blank">Mutable State Sucks <em>(12:36)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222842-how-to-become-stateless" target="_blank">How to become stateless <em>(15:04)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222829-declarative-style" target="_blank">Declarative Style <em>(7:00)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222830-functions-without-side-effects" target="_blank">Functions without Side Effects <em>(6:55)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222831-lazy-evaluation" target="_blank">Lazy Evaluation <em>(9:30)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222833-type-systems" target="_blank">Type Systems <em>(9:20)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222834-recursion" target="_blank">Recursion <em>(3:38)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222836-higher-order-functions" target="_blank">Higher Order Functions <em>(12:18)</em></a></li>
-                                    <li><a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222838-functional-patterns" target="_blank">Functional Patterns <em>(6:23)</em></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                        </div>
-                    <!-- Panel 2 -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Week 2: Recursion</a>
-                            <span class="onair">21 mins</span>
-                          </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-                          <div class="panel-body">
-                            In this week, you're already prepared to start going deeper. Since ages, recursion has been considered the ugly guy. Some (very) bad teachers encourage against it, saying that it's even worse than Comic Sans. In this week we're going to see that it's not as bad as some say, but it's one of the most powerful tools in programming in general (and in functional programming in particular). You need to learn some tricks to use it properly, and then you'll be ready to forget your loops forever...<br/><br/>
-                            <ul>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743148-recursion" target="_blank">Recursion <em>(9:02)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743157-recursive-functions" target="_blank">Recursive Functions <em>(7:08)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743189-tail-recursion" target="_blank">Tail Recursion and Tail Call Optimization <em>(12:17)</em></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- Panel 3 -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Week 3: Functions</a>
-                            <span class="onair">53 mins</span>
-                          </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-                          <div class="panel-body">
-                            Functions are the cornerstone of Functional Programming. You already guessed it... In this week you'll learn new ways to deal with functions, not just to group code together, but to combine and compose several functions to create higher abstractions. You'll get the most from your functions<br/><br/>
-                            <ul>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743231-functions-as-first-class-citizens" target="_blank">Functions as First Class Citizens <em>(12:57)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743237-closures" target="_blank">Closures (or Lambdas) <em>(3:04)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743246-partial-application-currying" target="_blank">Partial Applications and Currying <em>(13:14)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743248-continuation-passing-style" target="_blank">Continuation Passing Style <em>(8:10)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743272-functional-composition" target="_blank">Functions Composition <em>(10:34)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743283-creating-expressions-with-functions" target="_blank">Creating expressions <em>(4:57)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743298-play-combine-and-learn" target="_blank">Play combine learn <em>(13:05)</em></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- Panel 4 -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFour">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Week 4: Functional Transformations</a>
-                            <span class="onair">43 mins</span>
-                          </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
-                          <div class="panel-body">
-                            We're sure you already use map or reduce functions, but you're not so sure about how to use them properly or how they're implemented internally. Let's master these "functional functions" like nobody before<br/><br/>
-                            <ul>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743334-map" target="_blank">Map  <em>(14:53)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743343-filter" target="_blank">Filter <em>(7:25)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743350-fold" target="_blank">Fold <em>(9:53)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743383-flatmap" target="_blank">FlatMap <em>(4:41)</em></a></li>
-                                <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6750457-zip-foreach-and-sortby" target="_blank">Zip, forEach and sortBy <em>(6:35)</em></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- Panel 5 -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Week 5-10: Functional Patterns</a>
-                            <span class="onair">3.5 h</span>
-                          </h4>
-                        </div>
-                    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
-                        <div class="panel-body">
-                            <!-- Sections -->
-                            <div class="panel-body">
-                            <h4 class="panel-title">Week 5: Functors</h4><br/>
-                            There you go! After 4 weeks of functional programming exposure, we're ready to dive into the first weird concept. But don't worry, it's not as hard as it looks: you'll learn what a "functor" is and you'll realize that you've been using functors for some time without realizing it!<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743767-your-first-functor-option" target="_blank">Your first functor: Option <em>(15:53)</em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743772-collection-functor" target="_blank">Collection Functor <em>(4:09)</em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743778-result-functor" target="_blank">Result Functor <em>(9:45)</em></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="panel-body">
-                            <h4 class="panel-title">Week 6: Monoids</h4><br/>
-                            It wasn't so hard, was it? Now you're going to learn your second functional pattern: the monoid. For that, we're going to implement a small library for validations following all your brand-new knowledge...<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743844-monoids" target="_blank">Monoids <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743857-use-values-as-a-returns" target="_blank">Use return values <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743871-combine-and-validate" target="_blank">Combine AND validate <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743876-validat-or" target="_blank">Combine validatORs <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743879-semigroup" target="_blank">Semigroup <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743882-monoid-is-not-an-insult" target="_blank">Monoid is not an insult <em></em></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="panel-body">
-                            <h4 class="panel-title">Week 7: Monads</h4><br/>
-                            Finally! If you at some point have been scared about functional programming, chances are monads are the cause. After this week, you finally don't be scared anymore, and you'll learn how monads work, how to use them, and how to create your own ones! And most important, at the end you'll realize that "monads are just monoids in the category of endofunctors". It's true!<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743888-what-the-hell-is-a-monad" target="_blank">What the hell is a monad? <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743890-your-results-are-monads" target="_blank">Your Results are monads <em></em></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="panel-body">
-                            <h4 class="panel-title">Week 8: Applicatives</h4><br/>
-                            Now that you know what a monad is, let's go for other powerful functional pattern: the applicative.<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743899-what-is-an-applicative" target="_blank">What is an Applicative? <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743909-applicative-for-validation" target="_blank">Applicative for Validation <em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743918-untangling-this-mess" target="_blank">Untangling this mess! <em></em></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="panel-body">
-                            <h4 class="panel-title">Week 9: The Future</h4><br/>
-                            After these 8 weeks, you've learnt a lot of new (and old) concepts. Some of them are so powerful that you'll need weeks (or even months) of practice to be proficient enough. So, in order to accelerate your learning, now we're going to use all those concepts together, in a new library to deal with asynchronous code: we're going to create the Future.<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743974-won-t-somebody-please-think-of-the-asynchronous" target="_blank">Won't Somebody Please Think of the Asynchronous?<em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743997-the-future-is-functional" target="_blank">The Future is Functional<em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743998-what-a-future-monad" target="_blank">What a Future Monad<em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744012-applying-the-future" target="_blank">Applying the Future <em></em></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="panel-body">
-                            <h4 class="panel-title">Week 10: The Further Future</h4><br/>
-                            And we're getting the end. Even though the asynchronous code is really useful, you sometimes need to synchronize different operation in order to wait for their completion. So, let's make the asynchronous synchronous in a functional way!<br/><br/>
-                                <ul>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744127-won-t-somebody-please-think-of-the-synchronous" target="_blank">Won't Somebody Please Think of the Synchronous?<em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744131-validations" target="_blank">Validations<em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744135-future-operators" target="_blank">Future Operators<em></em></a></li>
-                                    <li><a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744136-final-tweaks" target="_blank">Final Tweaks<em></em></a></li>
-                                </ul>
-                            </div>
-                            <!-- Sections-->
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <h2>Follow us!</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="footer col-xs-12">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="http://github.com/functionalkotlin" target="_blank" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://twitter.com/kotlinfp" target="_blank" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://vimeo.com/functionalhub" target="_blank" class="btn-social btn-outline"><span class="sr-only">Vimeo</span><i class="fa fa-fw fa-vimeo"></i></a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@functionalhub.com" target="_blank" class="btn-social btn-outline"><span class="sr-only">Email</span><i class="fa fa-fw fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright Functional Kotlin 2017 &copy; All rights reserved
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+<body class="index" id="page-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="mainNav">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="./">
+        <img alt="Functional Kotlin" class="img-responsive" src="img/logo.png">
+      </a>
     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="">The course</a>
+        </li>
+        <li class="page-scroll">
+          <a href="./#whykotlin">Why Kotlin?</a>
+        </li>
+        <li class="page-scroll">
+          <a href="./#team">Team</a>
+        </li>
+        <li class="page-scroll">
+          <a href="./#apple">Apple fan?</a>
+        </li>
+        <li class="page-scroll">
+          <a href="./#contact">Follow us!</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/main.min.js"></script>
+<!-- The course -->
+<section class="secondary" id="course">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>The Course</h2>
+        <hr class="chapters">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-10 col-lg-offset-1">
+        <!-- Panel 1 -->
+        <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+          <div class="panel panel-default">
+            <div class="panel-heading" id="headingOne" role="tab">
+              <h4 class="panel-title">
+                <a aria-controls="collapseOne" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button">Week
+                  1: Introduction ✌🏻</a>
+                <span class="onair">1.5h</span>
+              </h4>
+            </div>
+            <div aria-labelledby="headingOne" class="panel-collapse collapse in" id="collapseOne" role="tabpanel">
+              <div class="panel-body">
+                As any great story, we need to start from the very begining. In order to warm engines, we'll see what
+                functional programming is and what their basic principles are. And it's free... What are you waiting
+                for?<br/><br/>
+                <ul>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222826-what-is-functional-programming" target="_blank">What
+                      is Functional Programming? <em>(7:08)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222827-mutable-state-sucks" target="_blank">Mutable
+                      State Sucks <em>(12:36)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222842-how-to-become-stateless" target="_blank">How
+                      to become stateless <em>(15:04)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222829-declarative-style" target="_blank">Declarative
+                      Style <em>(7:00)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222830-functions-without-side-effects" target="_blank">Functions
+                      without Side Effects <em>(6:55)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222831-lazy-evaluation" target="_blank">Lazy
+                      Evaluation <em>(9:30)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222833-type-systems" target="_blank">Type
+                      Systems <em>(9:20)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222834-recursion" target="_blank">Recursion
+                      <em>(3:38)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222836-higher-order-functions" target="_blank">Higher
+                      Order Functions <em>(12:18)</em></a></li>
+                  <li>
+                    <a class="video-link" href="http://functionalhub.thinkific.com/courses/take/introduction-functional-programming-kotlin/lessons/2222838-functional-patterns" target="_blank">Functional
+                      Patterns <em>(6:23)</em></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 2 -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="headingTwo" role="tab">
+              <h4 class="panel-title">
+                <a aria-controls="collapseTwo" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" role="button">Week
+                  2: Recursion</a>
+                <span class="onair">21 mins</span>
+              </h4>
+            </div>
+            <div aria-labelledby="headingTwo" class="panel-collapse collapse in" id="collapseTwo" role="tabpanel">
+              <div class="panel-body">
+                In this week, you're already prepared to start going deeper. Since ages, recursion has been considered
+                the ugly guy. Some (very) bad teachers encourage against it, saying that it's even worse than Comic
+                Sans. In this week we're going to see that it's not as bad as some say, but it's one of the most
+                powerful tools in programming in general (and in functional programming in particular). You need to
+                learn some tricks to use it properly, and then you'll be ready to forget your loops forever...<br/><br/>
+                <ul>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743148-recursion" target="_blank">Recursion
+                      <em>(9:02)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743157-recursive-functions" target="_blank">Recursive
+                      Functions <em>(7:08)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743189-tail-recursion" target="_blank">Tail
+                      Recursion and Tail Call Optimization <em>(12:17)</em></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 3 -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="headingThree" role="tab">
+              <h4 class="panel-title">
+                <a aria-controls="collapseThree" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree" role="button">Week
+                  3: Functions</a>
+                <span class="onair">53 mins</span>
+              </h4>
+            </div>
+            <div aria-labelledby="headingThree" class="panel-collapse collapse in" id="collapseThree" role="tabpanel">
+              <div class="panel-body">
+                Functions are the cornerstone of Functional Programming. You already guessed it... In this week you'll
+                learn new ways to deal with functions, not just to group code together, but to combine and compose
+                several functions to create higher abstractions. You'll get the most from your functions<br/><br/>
+                <ul>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743231-functions-as-first-class-citizens" target="_blank">Functions
+                      as First Class Citizens <em>(12:57)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743237-closures" target="_blank">Closures
+                      (or Lambdas) <em>(3:04)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743246-partial-application-currying" target="_blank">Partial
+                      Applications and Currying <em>(13:14)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743248-continuation-passing-style" target="_blank">Continuation
+                      Passing Style <em>(8:10)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743272-functional-composition" target="_blank">Functions
+                      Composition <em>(10:34)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743283-creating-expressions-with-functions" target="_blank">Creating
+                      expressions <em>(4:57)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743298-play-combine-and-learn" target="_blank">Play
+                      combine learn <em>(13:05)</em></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 4 -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="headingFour" role="tab">
+              <h4 class="panel-title">
+                <a aria-controls="collapseFour" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour" role="button">Week
+                  4: Functional Transformations</a>
+                <span class="onair">43 mins</span>
+              </h4>
+            </div>
+            <div aria-labelledby="headingFour" class="panel-collapse collapse in" id="collapseFour" role="tabpanel">
+              <div class="panel-body">
+                We're sure you already use map or reduce functions, but you're not so sure about how to use them
+                properly or how they're implemented internally. Let's master these "functional functions" like nobody
+                before<br/><br/>
+                <ul>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743334-map" target="_blank">Map
+                      <em>(14:53)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743343-filter" target="_blank">Filter
+                      <em>(7:25)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743350-fold" target="_blank">Fold
+                      <em>(9:53)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743383-flatmap" target="_blank">FlatMap
+                      <em>(4:41)</em></a></li>
+                  <li>
+                    <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6750457-zip-foreach-and-sortby" target="_blank">Zip,
+                      forEach and sortBy <em>(6:35)</em></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 5 -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="headingFive" role="tab">
+              <h4 class="panel-title">
+                <a aria-controls="collapseFive" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive" role="button">Week
+                  5-10: Functional Patterns</a>
+                <span class="onair">3.5 h</span>
+              </h4>
+            </div>
+            <div aria-labelledby="headingFive" class="panel-collapse collapse in" id="collapseFive" role="tabpanel">
+              <div class="panel-body">
+                <!-- Sections -->
+                <div class="panel-body">
+                  <h4 class="panel-title">Week 5: Functors</h4><br/>
+                  There you go! After 4 weeks of functional programming exposure, we're ready to dive into the first
+                  weird concept. But don't worry, it's not as hard as it looks: you'll learn what a "functor" is and
+                  you'll realize that you've been using functors for some time without realizing it!<br/><br/>
+                  <ul>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743767-your-first-functor-option" target="_blank">Your
+                        first functor: Option <em>(15:53)</em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743772-collection-functor" target="_blank">Collection
+                        Functor <em>(4:09)</em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programming-in-kotlin-foundations/lessons/6743778-result-functor" target="_blank">Result
+                        Functor <em>(9:45)</em></a></li>
+                  </ul>
+                </div>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                <div class="panel-body">
+                  <h4 class="panel-title">Week 6: Monoids</h4><br/>
+                  It wasn't so hard, was it? Now you're going to learn your second functional pattern: the monoid. For
+                  that, we're going to implement a small library for validations following all your brand-new
+                  knowledge...<br/><br/>
+                  <ul>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743844-monoids" target="_blank">Monoids
+                        <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743857-use-values-as-a-returns" target="_blank">Use
+                        return values <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743871-combine-and-validate" target="_blank">Combine
+                        AND validate <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743876-validat-or" target="_blank">Combine
+                        validatORs <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743879-semigroup" target="_blank">Semigroup
+                        <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743882-monoid-is-not-an-insult" target="_blank">Monoid
+                        is not an insult <em></em></a></li>
+                  </ul>
+                </div>
 
-      ga('create', 'UA-48436705-9', 'auto');
-      ga('send', 'pageview');
+                <div class="panel-body">
+                  <h4 class="panel-title">Week 7: Monads</h4><br/>
+                  Finally! If you at some point have been scared about functional programming, chances are monads are
+                  the cause. After this week, you finally don't be scared anymore, and you'll learn how monads work, how
+                  to use them, and how to create your own ones! And most important, at the end you'll realize that
+                  "monads are just monoids in the category of endofunctors". It's true!<br/><br/>
+                  <ul>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743888-what-the-hell-is-a-monad" target="_blank">What
+                        the hell is a monad? <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743890-your-results-are-monads" target="_blank">Your
+                        Results are monads <em></em></a></li>
+                  </ul>
+                </div>
 
-    </script>
+                <div class="panel-body">
+                  <h4 class="panel-title">Week 8: Applicatives</h4><br/>
+                  Now that you know what a monad is, let's go for other powerful functional pattern: the
+                  applicative.<br/><br/>
+                  <ul>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743899-what-is-an-applicative" target="_blank">What
+                        is an Applicative? <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743909-applicative-for-validation" target="_blank">Applicative
+                        for Validation <em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743918-untangling-this-mess" target="_blank">Untangling
+                        this mess! <em></em></a></li>
+                  </ul>
+                </div>
+
+                <div class="panel-body">
+                  <h4 class="panel-title">Week 9: The Future</h4><br/>
+                  After these 8 weeks, you've learnt a lot of new (and old) concepts. Some of them are so powerful that
+                  you'll need weeks (or even months) of practice to be proficient enough. So, in order to accelerate
+                  your learning, now we're going to use all those concepts together, in a new library to deal with
+                  asynchronous code: we're going to create the Future.<br/><br/>
+                  <ul>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743974-won-t-somebody-please-think-of-the-asynchronous" target="_blank">Won't
+                        Somebody Please Think of the Asynchronous?<em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743997-the-future-is-functional" target="_blank">The
+                        Future is Functional<em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6743998-what-a-future-monad" target="_blank">What
+                        a Future Monad<em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744012-applying-the-future" target="_blank">Applying
+                        the Future <em></em></a></li>
+                  </ul>
+                </div>
+
+                <div class="panel-body">
+                  <h4 class="panel-title">Week 10: The Further Future</h4><br/>
+                  And we're getting the end. Even though the asynchronous code is really useful, you sometimes need to
+                  synchronize different operation in order to wait for their completion. So, let's make the asynchronous
+                  synchronous in a functional way!<br/><br/>
+                  <ul>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744127-won-t-somebody-please-think-of-the-synchronous" target="_blank">Won't
+                        Somebody Please Think of the Synchronous?<em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744131-validations" target="_blank">Validations<em></em></a>
+                    </li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744135-future-operators" target="_blank">Future
+                        Operators<em></em></a></li>
+                    <li>
+                      <a class="video-link" href="https://functionalhub.thinkific.com/courses/take/functional-programmin-in-kotlin-patterns/lessons/6744136-final-tweaks" target="_blank">Final
+                        Tweaks<em></em></a></li>
+                  </ul>
+                </div>
+                <!-- Sections-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center" id="contact">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>Follow us!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer col-xs-12">
+          <ul class="list-inline">
+            <li>
+              <a class="btn-social btn-outline" href="http://github.com/functionalkotlin" target="_blank"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+            </li>
+            <li>
+              <a class="btn-social btn-outline" href="http://twitter.com/kotlinfp" target="_blank"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="btn-social btn-outline" href="http://vimeo.com/functionalhub" target="_blank"><span class="sr-only">Vimeo</span><i class="fa fa-fw fa-vimeo"></i></a>
+            </li>
+            <li>
+              <a class="btn-social btn-outline" href="mailto:info@functionalhub.com" target="_blank"><span class="sr-only">Email</span><i class="fa fa-fw fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Copyright Functional Kotlin 2017 &copy; All rights reserved
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/main.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48436705-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 
 </html>
